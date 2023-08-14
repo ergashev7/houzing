@@ -1,12 +1,13 @@
 import React from "react";
-import { Container } from "./style.js";
-import { Input } from "../Generic/Input/index.jsx";
+import { Container } from "./style";
+import { Input, Button } from "../Generic";
 
 export const Home = () => {
   return (
     <Container>
       <h1>Home</h1>
-      <Input />
+      <Input placeholder={"test"} width={200} />
+      <Button>test</Button>
     </Container>
   );
 };

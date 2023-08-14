@@ -27,20 +27,17 @@ const getType = ({ type }) => {
       };
   }
 };
-const Container = styled.button`
+const Container = styled.input`
   font-family: Montserrat;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 120px;
-  cursor: pointer;
+  outline: none;
+  border: 1px solid #e6e9ec;
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : "14px")};
   height: ${({ height }) => (height ? `${height}px` : "44px")};
-  width: ${({ width }) => (width ? `${width}px` : "130px")};
+  width: ${({ width }) => (width ? `${width}px` : "100%")};
   border-radius: 2px;
-  ${getType}
-  :active {
-    opacity: 0.7;
-  }
 `;
 export { Container };

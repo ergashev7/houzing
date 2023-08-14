@@ -1,5 +1,2 @@
-import React from "react";
-
-export const Generics = () => {
-  return <div>Generics</div>;
-};
+export { default as Button } from "./Button";
+export { default as Input } from "./Input";
