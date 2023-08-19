@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import logoImg from "../../assets/img/Vector.png";
 import { navbar } from "../../utils/navbar";
 import { Button } from "../Generic/Button/index.jsx";
+import Filter from "../Filter/index.jsx";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -38,6 +39,7 @@ export const Home = () => {
           </Section>
         </Wrapper>
       </Main>
+      <Filter></Filter>
       <Outlet />
     </Container>
   );
