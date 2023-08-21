@@ -52,6 +52,7 @@ export const Filter = () => {
         arrow={{
           pointAtCenter: true,
         }}
+        trigger="click"
       >
         <div>
           <Button type={"light"}>
